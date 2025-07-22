@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Blade : MonoBehaviour
+public class FruitNinjaBlade : MonoBehaviour
 {
     public float sliceForce = 5f;
     public float minSliceVelocity = 0.01f;

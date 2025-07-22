@@ -3,12 +3,12 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [DefaultExecutionOrder(-1)]
-public class GameManager : MonoBehaviour
+public class FruitNinjaGameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
+    public static FruitNinjaGameManager Instance { get; private set; }
 
-    [SerializeField] private Blade blade;
-    [SerializeField] private Spawner spawner;
+    [SerializeField] private FruitNinjaBlade blade;
+    [SerializeField] private FruitNinjaSpawner spawner;
     [SerializeField] private Text scoreText;
     [SerializeField] private Image fadeImage;
 
@@ -56,9 +56,9 @@ public class GameManager : MonoBehaviour
             Destroy(fruit.gameObject);
         }
 
-        Bomb[] bombs = FindObjectsOfType<Bomb>();
+        FruitNinjaBomb[] bombs = FindObjectsOfType<FruitNinjaBomb>();
 
-        foreach (Bomb bomb in bombs) {
+        foreach (FruitNinjaBomb bomb in bombs) {
             Destroy(bomb.gameObject);
         }
     }

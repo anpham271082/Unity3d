@@ -1,13 +1,13 @@
 using UnityEngine;
 
-public class Bomb : MonoBehaviour
+public class FruitNinjaBomb : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
             GetComponent<Collider>().enabled = false;
-            GameManager.Instance.Explode();
+            FruitNinjaGameManager.Instance.Explode();
         }
     }
 

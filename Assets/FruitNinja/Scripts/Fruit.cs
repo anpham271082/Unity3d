@@ -20,7 +20,7 @@ public class Fruit : MonoBehaviour
 
     private void Slice(Vector3 direction, Vector3 position, float force)
     {
-        GameManager.Instance.IncreaseScore(points);
+        FruitNinjaGameManager.Instance.IncreaseScore(points);
 
         // Disable the whole fruit
         fruitCollider.enabled = false;
@@ -48,7 +48,7 @@ public class Fruit : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Blade blade = other.GetComponent<Blade>();
+            FruitNinjaBlade blade = other.GetComponent<FruitNinjaBlade>();
             Slice(blade.direction, blade.transform.position, blade.sliceForce);
         }
     }
