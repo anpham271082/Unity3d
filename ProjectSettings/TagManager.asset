@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - CrashMode
+  - Net
   layers:
   - Default
   - TransparentFX
@@ -21,8 +22,8 @@ TagManager:
   - CrashObject
   - Kart
   - TrainingCheckpoints
-  - 
-  - 
+  - Net
+  - Ring
   - 
   - 
   - 
